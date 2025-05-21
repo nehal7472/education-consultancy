@@ -27,8 +27,8 @@ function App() {
       <section className="bg-bgColor">
         {/*****---->  Header Section starts here  <----*****/}
         <header>
-          {/* Header-Top Section */}
-          <div className="h-12 bg-primary text-textWhite flex flex-wrap justify-between items-center px-4 lg:px-16  font-bold text-sm lg:text-base">
+          {/*----> Header-Top Section <---*/}
+          <div className="py-4 md:py-0 lg:h-12  bg-primary text-textWhite flex flex-wrap justify-between items-center px-4 lg:px-16  font-bold text-sm lg:text-base text-center">
             <h2 className="w-full lg:w-auto text-center lg:text-left mb-2 lg:mb-0">
               We're Leading Educational Consultancy in Bangladesh.
             </h2>
@@ -41,7 +41,7 @@ function App() {
             </div>
           </div>
 
-          {/* Header-Middle Section */}
+          {/* {---->* Header-Middle Section <----*} */}
           <div className="flex flex-wrap justify-between items-center px-4 lg:px-16 py-6 gap-8">
             <div className="mx-auto lg:mx-0">
               <img src="logo.png" alt="Logo" className="w-40 md:w-[250px]" />
@@ -173,39 +173,39 @@ function App() {
         {/*****---->  Main Section ends here  <----*****/}
 
         {/*****---->  Offer Section  starts here  <----*****/}
-        <div class="w-full bg-bgColor2 p-12 flex flex-col items-center gap-12">
+        <div className="w-full bg-bgColor2 p-12 flex flex-col items-center gap-12">
           <img src="offer-logo.png" alt="" width={700} />
           {/*****---->  Offer Section Cards  <----*****/}
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 pb-16">
-            <div class="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 pb-16">
+            <div className="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
               <NotebookPen color="#1E99C7" size={48} />
               <p className="tracking-wider">Eligibility Assessment</p>
             </div>
-            <div class="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
+            <div className="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4 text-center">
               <Landmark color="#1E99C7" size={48} />
               <p className="tracking-wider">University & Program Selection</p>
             </div>
-            <div class="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
+            <div className="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
               <FileUser color="#1E99C7" size={48} />
               <p className="tracking-wider">Scholarship Application</p>
             </div>
-            <div class="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
+            <div className="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
               <FileCheck color="#1E99C7" size={48} />
               <p className="tracking-wider">Sponsor DocumentSupport</p>
             </div>
-            <div class="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
+            <div className="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
               <Receipt color="#1E99C7" size={48} />
               <p className="tracking-wider">Bank Statement Support</p>
             </div>
-            <div class="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
+            <div className="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
               <MailOpen color="#1E99C7" size={48} />
               <p className="tracking-wider">SDP Letter Writing</p>
             </div>
-            <div class="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
+            <div className="flex flex-col items-center justify-center cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
               <BookMarked color="#1E99C7" size={48} />
               <p className="tracking-wider">Visa Application Support</p>
             </div>
-            <div class="flex flex-col items-center justify-center   cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
+            <div className="flex flex-col items-center justify-center   cursor-pointer overflow-hidden text-lg font-bold transition duration-300 ease-in border-b-4 border-bgColor2 hover:shadow-3xl hover:border-secondary gap-4">
               <PlaneTakeoff color="#1E99C7" size={48} />
               <p className="tracking-wider"> Pre-Departure Information</p>
             </div>
