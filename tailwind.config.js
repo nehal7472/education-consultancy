@@ -15,10 +15,6 @@ export default {
       serif: ["Merriweather", "serif"],
     },
     extend: {
-      spacing: {
-        128: "32rem",
-        144: "36rem",
-      },
       colors: {
       bgColor: "#F6F9FE",
       bgColor2: "#F1F4F9",
@@ -33,9 +29,6 @@ export default {
       gradient : '#24579F',
       gradient2 : '#20A0C9',
     },
-      borderRadius: {
-        "4xl": "2rem",
-      },
       boxShadow: {
         "3xl": "1.5px 4.5px 8px 4.5px #dddddd",
       },

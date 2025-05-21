@@ -17,6 +17,7 @@ import {
   Phone,
   MailCheck,
   Navigation,
+  SquareArrowDown,
 } from "lucide-react";
 
 // website link --> https://dreamstudyinternational.com/#apply
@@ -26,94 +27,152 @@ function App() {
     <>
       <section className="bg-bgColor">
         {/*****---->  Header Section starts here  <----*****/}
-        <header>
-          {/*----> Header-Top Section <---*/}
-          <div className="py-4 md:py-0 lg:h-14  bg-primary text-textWhite flex flex-wrap justify-between items-center px-4 lg:px-16  font-bold text-sm lg:text-base text-center">
-            <h2 className="w-full lg:w-auto text-center lg:text-left mb-2 lg:mb-0">
-              We're Leading Educational Consultancy in Bangladesh.
-            </h2>
-            <div className="h-full flex flex-wrap justify-center items-center lg:justify-end gap-2 lg:gap-4 ">
-              <h2>Office Hours: 10:00AM - 07:00PM</h2>
-              <a
-                target="_blank"
-                href="https://www.facebook.com/cryptic.nehal.9/"
-              >
-                <Facebook size={28} color="#ffff" strokeWidth={1.5} />
-              </a>
-              <a target="_blank" href="https://www.instagram.com/ahsanulnehal/">
-                <Instagram size={28} color="#ffff" strokeWidth={1.5} />
-              </a>
-              <a target="_blank" href="https://github.com/nehal7472">
-                <Github size={28} color="#ffff" strokeWidth={1.5} />
-              </a>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/ahsanul-haque-nehal/"
-              >
-                <Linkedin size={28} color="#ffff" strokeWidth={1.5} />
-              </a>
-            </div>
-          </div>
 
-          {/* {---->* Header-Middle Section <----*} */}
-          <div className="flex flex-wrap justify-between items-center px-4 lg:px-16 py-8 gap-8">
-            <div className="mx-auto lg:mx-0">
-              <img src="logo.png" alt="Logo" className="w-40 md:w-[250px]" />
+        {/*----> Header-Top Section <---*/}
+        <div className="py-4 md:py-0 lg:h-14  bg-primary text-textWhite flex flex-wrap justify-between items-center px-4 lg:px-16  font-bold text-sm lg:text-base text-center">
+          <h2 className="w-full lg:w-auto text-center lg:text-left mb-2 lg:mb-0">
+            We're Leading Educational Consultancy in Bangladesh.
+          </h2>
+          <div className="h-full flex flex-wrap justify-center items-center lg:justify-end gap-2 lg:gap-4 ">
+            <h2>Office Hours: 10:00AM - 07:00PM</h2>
+            <a target="_blank" href="https://www.facebook.com/cryptic.nehal.9/">
+              <Facebook size={28} color="#ffff" strokeWidth={1.5} />
+            </a>
+            <a target="_blank" href="https://www.instagram.com/ahsanulnehal/">
+              <Instagram size={28} color="#ffff" strokeWidth={1.5} />
+            </a>
+            <a target="_blank" href="https://github.com/nehal7472">
+              <Github size={28} color="#ffff" strokeWidth={1.5} />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/ahsanul-haque-nehal/"
+            >
+              <Linkedin size={28} color="#ffff" strokeWidth={1.5} />
+            </a>
+          </div>
+        </div>
+
+        {/* {---->* Header-Middle Section <----*} */}
+        <div className="flex flex-wrap md:justify-between justify-center items-center px-4 lg:px-16 py-8 gap-8 ">
+          <div className="mx-auto lg:mx-0">
+            <img src="logo.png" alt="Logo" className="w-40 md:w-[250px]" />
+          </div>
+          <div className="flex flex-col md:flex-row gap-6 lg:gap-40">
+            <div className="flex items-center gap-4">
+              <Phone size={32} color="#1B9FCB" className="text-accent" />
+              <div>
+                <p className="font-bold text-textDarkGray">Call Us:</p>
+                <p className="text-textDarkGray">+8801633247472</p>
+              </div>
             </div>
-            <div className="flex flex-col md:flex-row gap-6 lg:gap-40">
-              <div className="flex items-center gap-4">
-                <Phone size={32} color="#1B9FCB" className="text-accent" />
-                <div>
-                  <p className="font-bold text-textDarkGray">Call Us:</p>
-                  <p className="text-textDarkGray">+8801633247472</p>
-                </div>
+            <div className="flex items-center gap-4">
+              <MailCheck size={32} color="#1B9FCB" className="text-accent" />
+              <div>
+                <p className="font-bold text-textDarkGray">Email Us:</p>
+                <p className="text-textDarkGray">007cryptic@gmail.com</p>
               </div>
-              <div className="flex items-center gap-4">
-                <MailCheck size={32} color="#1B9FCB" className="text-accent" />
-                <div>
-                  <p className="font-bold text-textDarkGray">Email Us:</p>
-                  <p className="text-textDarkGray">007cryptic@gmail.com</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4">
-                <Navigation size={32} color="#1B9FCB" className="text-accent" />
-                <div>
-                  <p className="font-bold text-textDarkGray"> Location Us:</p>
-                  <p className="text-textDarkGray">Sylhet, Bangladesh</p>
-                </div>
+            </div>
+            <div className="flex items-center gap-4">
+              <Navigation size={32} color="#1B9FCB" className="text-accent" />
+              <div>
+                <p className="font-bold text-textDarkGray"> Location Us:</p>
+                <p className="text-textDarkGray">Sylhet, Bangladesh</p>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Header-Nav Section */}
-          <nav className="w-[92%] mx-auto sticky top-0 z-50">
-            <div className="flex flex-wrap justify-between items-center bg-primary text-textWhite font-bold py-4 px-4 lg:px-8 rounded-md shadow-md">
-              <ul className="flex flex-wrap gap-4 lg:gap-8 text-sm lg:text-lg justify-center lg:justify-start w-full lg:w-auto mb-2 lg:mb-0">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#">Services</a>
-                </li>
-                <li>
-                  <a href="#">Countries</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-              </ul>
-              <button class="text-lg px-6 py-3 bg-blue-600 text-white font-bold rounded-lg transform transition-transform duration-300 hover:scale-105">
-                Apply Now
-              </button>
-            </div>
-          </nav>
-        </header>
+        {/* Header-Nav Section <----*} */}
+        <nav className="w-[92%] mx-auto sticky top-0 z-50">
+          <div className="flex flex-wrap justify-center md:justify-between items-center bg-primary text-textWhite font-bold py-4 px-4 lg:px-8 rounded-md shadow-md">
+            <ul className="flex flex-wrap gap-4 lg:gap-8 text-sm lg:text-lg justify-center lg:justify-start w-full lg:w-auto mb-2 lg:mb-0 relative">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Services</a>
+              </li>
+
+              <li className="relative group">
+                <input
+                  type="checkbox"
+                  id="countries-toggle"
+                  className="peer hidden"
+                />
+                <label
+                  htmlFor="countries-toggle"
+                  className="flex items-center gap-1 cursor-pointer hover:text-secondary transition select-none"
+                >
+                  Countries
+                </label>
+
+                <ul
+                  className="absolute left-0 top-full mt-2 w-48 bg-white text-black rounded-lg shadow-lg overflow-hidden
+          opacity-0 scale-y-95 pointer-events-none
+          transform origin-top transition-all duration-500 ease-in-out
+          peer-checked:opacity-100 peer-checked:scale-y-100 peer-checked:pointer-events-auto
+          lg:group-hover:opacity-100 lg:group-hover:scale-y-100 lg:group-hover:pointer-events-auto z-50"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 hover:bg-primary hover:text-white transition-all"
+                    >
+                      USA
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 hover:bg-primary hover:text-white transition-all"
+                    >
+                      UK
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 hover:bg-primary hover:text-white transition-all"
+                    >
+                      Canada
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 hover:bg-primary hover:text-white transition-all"
+                    >
+                      Australia
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block px-4 py-2 hover:bg-primary hover:text-white transition-all"
+                    >
+                      Germany
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+
+            <button className="text-lg px-6 py-3 bg-blue-600 text-white font-bold rounded-lg transform transition-transform duration-300 hover:scale-105">
+              Apply Now
+            </button>
+          </div>
+        </nav>
 
         {/*****---->  Header Section ends here  <----*****/}
 
@@ -190,15 +249,15 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 pb-16">
             <div className="card">
               <NotebookPen color="#1E99C7" size={48} />
-              <p className="tracking-wider">Eligibility Assessment</p>
+              <p className="letterSpacing">Eligibility Assessment</p>
             </div>
             <div className="card">
               <Landmark color="#1E99C7" size={48} />
-              <p className="tracking-wider">University & Program Selection</p>
+              <p className="letterSpacing text-center">University & Program Selection</p>
             </div>
             <div className="card">
               <FileUser color="#1E99C7" size={48} />
-              <p className="tracking-wider">Scholarship Application</p>
+              <p className="letterSpacing">Scholarship Application</p>
             </div>
             <div className="card">
               <FileCheck color="#1E99C7" size={48} />
@@ -206,19 +265,19 @@ function App() {
             </div>
             <div className="card">
               <Receipt color="#1E99C7" size={48} />
-              <p className="tracking-wider">Bank Statement Support</p>
+              <p className="letterSpacing">Bank Statement Support</p>
             </div>
             <div className="card">
               <MailOpen color="#1E99C7" size={48} />
-              <p className="tracking-wider">SDP Letter Writing</p>
+              <p className="letterSpacing">SDP Letter Writing</p>
             </div>
             <div className="card">
               <BookMarked color="#1E99C7" size={48} />
-              <p className="tracking-wider">Visa Application Support</p>
+              <p className="letterSpacing">Visa Application Support</p>
             </div>
             <div className="card">
               <PlaneTakeoff color="#1E99C7" size={48} />
-              <p className="tracking-wider"> Pre-Departure Information</p>
+              <p className="letterSpacing"> Pre-Departure Information</p>
             </div>
           </div>
         </div>
@@ -264,7 +323,7 @@ function App() {
             <div className="flex gap-24">
               <div className="flex flex-col gap-8">
                 <h2 className=" text-2xl font-bold text-textDarkGray flex">
-                  <div className="mr-2 pl-2 w-8 bg-secondary rounded-full text-textWhite">
+                  <div className=" pl-2 w-8 bg-secondary rounded-full text-textWhite">
                     S
                   </div>
                   itemap
@@ -290,7 +349,7 @@ function App() {
               {/*****---->  Footer countries <----*****/}
               <div className="flex flex-col gap-8">
                 <h2 className="text-2xl font-bold text-textDarkGray flex">
-                  <div className="mr-2 pl-2 w-8 bg-secondary rounded-full text-textWhite">
+                  <div className=" pl-2 w-8 bg-secondary rounded-full text-textWhite">
                     C
                   </div>
                   ountries
@@ -338,7 +397,7 @@ function App() {
           </div>
           {/*****---->  Footer bottom  <----*****/}
           <div className="bg-[#22254B] text-[#ececec] flex flex-col md:flex-row justify-between items-center px-16 py-6 text-lg ">
-            <p>© 2023 Dream Study Int.. Designed By *hirebirds Team.</p>
+            <p>© 2025 Dream Study Int.. Designed By *hirebirds Team.</p>
             <ul className="flex justify-between items-center gap-4">
               <a href="#">
                 <li>About</li>

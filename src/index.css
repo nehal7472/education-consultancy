@@ -16,3 +16,9 @@
     @apply bg-gradient-to-r from-gradient to-gradient2 text-textWhite font-bold py-4 px-8 rounded-lg transition duration-300 ease-in-out hover:brightness-110 hover:scale-105 hover:bg-gradient;
   }
 }
+
+@layer utilities {
+  .letterSpacing{
+    @apply tracking-wider
+  }
+}
