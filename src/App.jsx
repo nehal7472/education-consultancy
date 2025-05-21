@@ -18,6 +18,7 @@ import {
   MailCheck,
   Navigation,
   SquareArrowDown,
+  Menu,
 } from "lucide-react";
 
 // website link --> https://dreamstudyinternational.com/#apply
@@ -25,15 +26,15 @@ import {
 function App() {
   return (
     <>
-      <section className="bg-bgColor">
+      <section className="bg-bgColor dark:bg-bgDark ">
         {/*****---->  Header Section starts here  <----*****/}
 
         {/*----> Header-Top Section <---*/}
-        <div className="py-4 md:py-0 lg:h-14  bg-primary text-textWhite flex flex-wrap justify-between items-center px-4 lg:px-16  font-bold text-sm lg:text-base text-center">
+        <div className="py-4 md:py-0 lg:h-14 dark:bg-textGray dark:text-textWhite  bg-primary text-textWhite flex flex-wrap justify-between items-center px-4 lg:px-16  font-bold text-sm lg:text-base text-center">
           <h2 className="w-full lg:w-auto text-center lg:text-left mb-2 lg:mb-0">
             We're Leading Educational Consultancy in Bangladesh.
           </h2>
-          <div className="h-full flex flex-wrap justify-center items-center lg:justify-end gap-2 lg:gap-4 ">
+          <div className="h-full flex flex-wrap justify-center items-center lg:justify-end gap-2 lg:gap-4 text-center">
             <h2>Office Hours: 10:00AM - 07:00PM</h2>
             <a target="_blank" href="https://www.facebook.com/cryptic.nehal.9/">
               <Facebook size={28} color="#ffff" strokeWidth={1.5} />
@@ -61,43 +62,61 @@ function App() {
           <div className="flex flex-col md:flex-row gap-6 lg:gap-40">
             <div className="flex items-center gap-4">
               <Phone size={32} color="#1B9FCB" className="text-accent" />
-              <div>
-                <p className="font-bold text-textDarkGray">Call Us:</p>
-                <p className="text-textDarkGray">+8801633247472</p>
+              <div className="">
+                <p className="font-bold text-textDarkGray dark:text-textWhite">
+                  Call Us:
+                </p>
+                <p className="text-textDarkGray dark:text-textWhite">
+                  +8801633247472
+                </p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <MailCheck size={32} color="#1B9FCB" className="text-accent" />
-              <div>
-                <p className="font-bold text-textDarkGray">Email Us:</p>
-                <p className="text-textDarkGray">007cryptic@gmail.com</p>
+              <div className="">
+                <p className="font-bold text-textDarkGray dark:text-textWhite">
+                  Email Us:
+                </p>
+                <p className="text-textDarkGray dark:text-textWhite">
+                  007cryptic@gmail.com
+                </p>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <Navigation size={32} color="#1B9FCB" className="text-accent" />
               <div>
-                <p className="font-bold text-textDarkGray"> Location Us:</p>
-                <p className="text-textDarkGray">Sylhet, Bangladesh</p>
+                <p className="font-bold text-textDarkGray dark:text-textWhite">
+                  {" "}
+                  Location Us:
+                </p>
+                <p className="text-textDarkGray dark:text-textWhite">
+                  Sylhet, Bangladesh
+                </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Header-Nav Section <----*} */}
-        <nav className="w-[92%] mx-auto sticky top-0 z-50">
-          <div className="flex flex-wrap justify-center md:justify-between items-center bg-primary text-textWhite font-bold py-4 px-4 lg:px-8 rounded-md shadow-md">
+        {/*---> Header-Nav Section <----*} */}
+        <nav className=" w-[92%] mx-auto sticky top-0 z-50">
+          <div className="flex  justify-between items-center dark:bg-slate-300 dark:text-textDarkGray bg-primary text-textWhite font-bold py-4 pr-16 md:px-4 lg:px-8 rounded-md shadow-md">
             <ul className="flex flex-wrap gap-4 lg:gap-8 text-sm lg:text-lg justify-center lg:justify-start w-full lg:w-auto mb-2 lg:mb-0 relative">
-              <li>
+              <li className=" md:hidden ">
+                <a href="">
+                  <Menu color="#ffffff" />
+                </a>
+              </li>
+              <li className="hidden md:block">
                 <a href="#">Home</a>
               </li>
-              <li>
+              <li className="hidden md:block">
                 <a href="#">About</a>
               </li>
-              <li>
+              <li className="hidden md:block">
                 <a href="#">Services</a>
               </li>
 
-              <li className="relative group">
+              <li className="hidden md:block md:relative group ">
                 <input
                   type="checkbox"
                   id="countries-toggle"
@@ -107,7 +126,7 @@ function App() {
                   htmlFor="countries-toggle"
                   className="flex items-center gap-1 cursor-pointer hover:text-secondary transition select-none"
                 >
-                  Countries
+                  Countries <SquareArrowDown />
                 </label>
 
                 <ul
@@ -160,15 +179,15 @@ function App() {
                 </ul>
               </li>
 
-              <li>
+              <li className="hidden md:block">
                 <a href="#">Contact</a>
               </li>
-              <li>
+              <li className="hidden md:block">
                 <a href="#">Privacy Policy</a>
               </li>
             </ul>
 
-            <button className="text-lg px-6 py-3 bg-blue-600 text-white font-bold rounded-lg transform transition-transform duration-300 hover:scale-105">
+            <button className="text-sm md:text-lg px-6 py-3 bg-blue-600 text-white font-bold rounded-lg transform transition-transform duration-300 hover:scale-105">
               Apply Now
             </button>
           </div>
@@ -194,7 +213,7 @@ function App() {
             </div>
 
             {/*****---->  Main Section form  <----*****/}
-            <div className="w-full md:w-2/5 bg-bgColor rounded-xl shadow-3xl  ">
+            <div className="w-full md:w-2/5  bg-bgColor rounded-xl shadow-3xl  ">
               <div className="w-full bg-gradient-to-r from-gradient to-gradient2 ease-in duration-300 cursor-pointer overflow-hidden text-textWhite rounded-t-xl  px-10 py-6 text-4xl font-bold">
                 Apply Now!
               </div>
@@ -249,35 +268,50 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-10 pb-16">
             <div className="card">
               <NotebookPen color="#1E99C7" size={48} />
-              <p className="letterSpacing">Eligibility Assessment</p>
+              <p className="letterSpacing" text-center>
+                Eligibility Assessment
+              </p>
             </div>
             <div className="card">
               <Landmark color="#1E99C7" size={48} />
-              <p className="letterSpacing text-center">University & Program Selection</p>
+              <p className="letterSpacing text-center">
+                University & Program Selection
+              </p>
             </div>
             <div className="card">
               <FileUser color="#1E99C7" size={48} />
-              <p className="letterSpacing">Scholarship Application</p>
+              <p className="letterSpacing text-center">
+                Scholarship Application
+              </p>
             </div>
             <div className="card">
               <FileCheck color="#1E99C7" size={48} />
-              <p className="tracking-wider">Sponsor DocumentSupport</p>
+              <p className="tracking-wider text-center">
+                Sponsor DocumentSupport
+              </p>
             </div>
             <div className="card">
               <Receipt color="#1E99C7" size={48} />
-              <p className="letterSpacing">Bank Statement Support</p>
+              <p className="letterSpacing text-center">
+                Bank Statement Support
+              </p>
             </div>
             <div className="card">
               <MailOpen color="#1E99C7" size={48} />
-              <p className="letterSpacing">SDP Letter Writing</p>
+              <p className="letterSpacing text-center">SDP Letter Writing</p>
             </div>
             <div className="card">
               <BookMarked color="#1E99C7" size={48} />
-              <p className="letterSpacing">Visa Application Support</p>
+              <p className="letterSpacing text-center">
+                Visa Application Support
+              </p>
             </div>
             <div className="card">
               <PlaneTakeoff color="#1E99C7" size={48} />
-              <p className="letterSpacing"> Pre-Departure Information</p>
+              <p className="letterSpacing text-center">
+                {" "}
+                Pre-Departure Information
+              </p>
             </div>
           </div>
         </div>
@@ -352,7 +386,7 @@ function App() {
                   <div className=" pl-2 w-8 bg-secondary rounded-full text-textWhite">
                     C
                   </div>
-                  ountries
+                  ities
                 </h2>
                 <ul className="list-disc flex flex-col gap-3 text-lg text-textDarkGray">
                   <a href="#">
