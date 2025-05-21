@@ -9,7 +9,17 @@ export default {
       xl: "1280px",
       "2xl": "1536px",
     },
-    colors: {
+    
+    fontFamily: {
+      sans: ["Graphik", "sans-serif"],
+      serif: ["Merriweather", "serif"],
+    },
+    extend: {
+      spacing: {
+        128: "32rem",
+        144: "36rem",
+      },
+      colors: {
       bgColor: "#F6F9FE",
       bgColor2: "#F1F4F9",
       primary: "#070F41",
@@ -23,15 +33,6 @@ export default {
       gradient : '#24579F',
       gradient2 : '#20A0C9',
     },
-    fontFamily: {
-      sans: ["Graphik", "sans-serif"],
-      serif: ["Merriweather", "serif"],
-    },
-    extend: {
-      spacing: {
-        128: "32rem",
-        144: "36rem",
-      },
       borderRadius: {
         "4xl": "2rem",
       },
